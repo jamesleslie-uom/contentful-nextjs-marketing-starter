@@ -1,4 +1,4 @@
-import { Theme } from '';
+import { Theme } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 
 import { Avatar } from '@src/components/features/avatar';
