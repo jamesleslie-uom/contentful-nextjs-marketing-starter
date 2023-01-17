@@ -1,0 +1,13 @@
+fragment CardFields on ComponentCard {
+  sys {
+    id
+  }
+  headline
+  url
+}
+
+query CtfCard($id: String!, $locale: String, $preview: Boolean) {
+  componentCard(id: $id, preview: $preview, locale: $locale) {
+    ...CardFields
+  }
+}

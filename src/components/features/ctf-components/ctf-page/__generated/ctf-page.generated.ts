@@ -1,7 +1,7 @@
 import * as Types from '../../../../../lib/__generated/graphql.types';
 
 import { AssetFieldsFragment } from '../../ctf-asset/__generated/ctf-asset.generated';
-import { ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
+import { ComponentReferenceFields_ComponentCard_Fragment, ComponentReferenceFields_ComponentCardGrid_Fragment, ComponentReferenceFields_ComponentCta_Fragment, ComponentReferenceFields_ComponentDuplex_Fragment, ComponentReferenceFields_ComponentHeroBanner_Fragment, ComponentReferenceFields_ComponentInfoBlock_Fragment, ComponentReferenceFields_ComponentProductTable_Fragment, ComponentReferenceFields_ComponentQuote_Fragment, ComponentReferenceFields_ComponentTextBlock_Fragment, ComponentReferenceFields_FooterMenu_Fragment, ComponentReferenceFields_MenuGroup_Fragment, ComponentReferenceFields_NavigationMenu_Fragment, ComponentReferenceFields_Page_Fragment, ComponentReferenceFields_Seo_Fragment, ComponentReferenceFields_TopicBusinessInfo_Fragment, ComponentReferenceFields_TopicPerson_Fragment, ComponentReferenceFields_TopicProduct_Fragment, ComponentReferenceFields_TopicProductFeature_Fragment } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
 import { fetchConfig } from '@src/lib/fetchConfig';
 import { AssetFieldsFragmentDoc } from '../../ctf-asset/__generated/ctf-asset.generated';
 import { ComponentReferenceFieldsFragmentDoc } from '../../../../../lib/shared-fragments/__generated/ctf-componentMap.generated';
@@ -30,6 +30,9 @@ export type CtfPageFieldsFragment = { __typename?: 'Page', pageName?: string | n
       { __typename?: 'Asset' }
       & AssetFieldsFragment
     ) | null } | null, topSectionCollection?: { __typename?: 'PageTopSectionCollection', items: Array<(
+      { __typename?: 'ComponentCardGrid' }
+      & ComponentReferenceFields_ComponentCardGrid_Fragment
+    ) | (
       { __typename?: 'ComponentCta' }
       & ComponentReferenceFields_ComponentCta_Fragment
     ) | (
@@ -48,6 +51,9 @@ export type CtfPageFieldsFragment = { __typename?: 'Page', pageName?: string | n
       { __typename?: 'ComponentTextBlock' }
       & ComponentReferenceFields_ComponentTextBlock_Fragment
     ) | null> } | null, pageContent?: (
+    { __typename?: 'ComponentCardGrid' }
+    & ComponentReferenceFields_ComponentCardGrid_Fragment
+  ) | (
     { __typename?: 'ComponentProductTable' }
     & ComponentReferenceFields_ComponentProductTable_Fragment
   ) | (
@@ -57,6 +63,9 @@ export type CtfPageFieldsFragment = { __typename?: 'Page', pageName?: string | n
     { __typename?: 'TopicProduct' }
     & ComponentReferenceFields_TopicProduct_Fragment
   ) | null, extraSectionCollection?: { __typename?: 'PageExtraSectionCollection', items: Array<(
+      { __typename?: 'ComponentCardGrid' }
+      & ComponentReferenceFields_ComponentCardGrid_Fragment
+    ) | (
       { __typename?: 'ComponentCta' }
       & ComponentReferenceFields_ComponentCta_Fragment
     ) | (

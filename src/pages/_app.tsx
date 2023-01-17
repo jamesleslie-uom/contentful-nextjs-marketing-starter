@@ -14,6 +14,8 @@ import colorfulTheme from '@src/theme';
 import contentfulConfig from 'contentful.config';
 import nextI18nConfig from 'next-i18next.config';
 
+import '../styles/index.css';
+
 type CustomPageProps = SSRConfig & { dehydratedState: DehydratedState; err: Error };
 
 const CustomApp = ({
